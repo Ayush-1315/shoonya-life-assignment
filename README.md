@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Wellness Retreats
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web page for a fictional wellness retreat platform. The page displays a list of available retreats, allowing users to filter them by date and type.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Single-page application using React
+- Responsive design for both desktop and mobile devices
+- Display list of retreats with details: Image, Title, Description, Date, Location, and Price
+- Filter retreats by date and type
+- Search retreats by title
+- Pagination for browsing retreats
 
-### `npm start`
+## Mock Data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application uses mock data for demonstration purposes. (https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## APIs
 
-### `npm test`
+- **Individual retreat data**: `https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats/{id}`
+- **Filter retreats by type**: `https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?tag=meditation&page=1&limit=3`
+- **Filter retreats by location and type**: `https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?tag=meditation&location=$Pune&page=$1&limit=3`
+- **Search retreats by title**: `https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?search=Yoga&page=$1&limit=3`
+- **Pagination**: `https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?page=1&limit=3`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   git clone https://github.com/Ayush-1315/shoonya-life-assignment.git
+   cd wellness-retreats
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**:
+    ```sh
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Start development Server**:
+    ```sh
+    npm start
