@@ -1,0 +1,16 @@
+.cardContainer {
+  display: flex;
+  justify-content:space-between;
+  padding:1rem;
+  flex-wrap: wrap;
+  gap: 1rem ;
+}
+
+/* Media Queries */
+@media (max-width:481px) {
+    .cardContainer{
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+    }
+  }

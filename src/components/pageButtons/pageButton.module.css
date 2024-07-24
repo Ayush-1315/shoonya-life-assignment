@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    padding: 1rem 0.5rem;
+    justify-content: center;
+    gap:0.5rem;
+    width: 98%;
+    margin: auto;
+}
+.container button{
+    background-color: #1B3252;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border-radius: 6px;
+    border: 1px solid rgb(209, 213, 219);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.container button:disabled{
+    background-color: #1e2733;
+}
+@media (max-width:481px) {
+    .container{
+        margin-bottom: 3rem;
+    }
+    .container button{
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        font-weight: normal;
+    }
+  }

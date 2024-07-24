@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  margin: 2rem auto;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  background-color: #e0d9cf;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  border: 0px solid rgb(229, 231, 235);
+  width: 50vw;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.card img {
+  height: 20rem;
+  width: 25rem;
+  border-radius: 6px;
+}
+.card h1 {
+  margin: 0 auto;
+}
+.card p {
+  text-align: left;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.tags {
+  font-weight: bold;
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  background: #8762d59c;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+}
+.description {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+/* Media Queries */
+@media (max-width: 481px) and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    width: 85%;
+  }
+  .card img {
+    border-radius: 2px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .card img {
+    border-radius: 6px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    flex-direction: row;
+    width: 85%;
+  }
+  .card img {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 6px;
+  }
+  .card > div:first-child {
+    align-self: center;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .card {
+    flex-direction: row;
+    width: 85%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .card {
+    flex-direction: row;
+    width: 70%;
+  }
+}

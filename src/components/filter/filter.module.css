@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    width: 98%;
+    margin: auto;
+}
+.container select,.container input{
+    background-color: #1B3252;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border-radius: 6px;
+    border: 1px solid rgb(209, 213, 219);
+    font-size: 1.2rem;
+}
+.container input:focus,.container select:focus{
+outline: none ;
+}
+.container input::placeholder{
+    color:#FFFFFF;
+}
+.container option{
+    background-color: #FFFFFF;
+    color:#000000;
+    cursor: pointer;
+}
+.container input{
+    width: 15vw;
+}
+/* Media Queries */
+@media (max-width:481px) {
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .container select{
+        background-color: #EFEFEF;
+        color: #000000;
+        border-radius: 2px;
+    }   
+    .container input{
+        width: 94%;
+        margin-top: 0.8rem;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 6px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
+@media (min-width:482px) and (max-width:600px){
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        gap: 0.8rem;
+    }
+    .container select{
+        background-color: #EFEFEF;
+        color: #000000;
+        border-radius: 2px;
+        width: 50%;
+    }   
+    .container input{
+        width: 94%;
+        margin-top: 0.8rem;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 6px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
+@media (min-width:601px) and (max-width:768px){
+    .container{
+      flex-direction: column;
+    }
+    .container>div:first-child{
+        display: flex;
+        gap: 0.8rem;
+        justify-content:center; 
+    }
+    .container select{
+        border-radius: 6px;
+    }   
+    .container input{
+        width: 50%;
+        margin-top: 0.8rem;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 6px;
+    }
+    .container input::placeholder{
+        color: #000000;
+    }
+  }
