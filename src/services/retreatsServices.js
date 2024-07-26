@@ -9,9 +9,9 @@ export const getRetreatsService=async(page)=>{
     }
 }
 
-export const searchRetreatsService=async(search,page)=>{
+export const searchRetreatsService=async(search,location,tag,page)=>{
     try{
-        const response=await axios.get(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?search=${search}&page=${page}&limit=3`);
+        const response=await axios.get(`https://669f704cb132e2c136fdd9a0.mockapi.io/api/v1/retreats?search=${search}&location=${location}&tag=${tag}&page=${page}&limit=3`);
         console.log(search)
         return response
     }catch(e){
